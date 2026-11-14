@@ -444,7 +444,7 @@ All validation results must be captured and stored for traceability.
 
 ### 7.1 README
 
-- [ ] Update `../../../README.md` to reflect current project state
+- [ ] Update `../../arch/README.md` to reflect current project state
 - [ ] Add installation instructions
 - [ ] Add usage example with sample inputs and expected outputs
 - [ ] List all currently supported pipe materials
