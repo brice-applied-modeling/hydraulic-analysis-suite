@@ -1,280 +1,134 @@
-# Hydraulic Analysis Suite
+# Hydraulic Analysis Suite (HAS)
 
-![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)
-![uv](https://img.shields.io/badge/package%20manager-uv-purple.svg)
-![Platform](https://img.shields.io/badge/platform-CLI-lightgrey.svg)
+![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
+![Package Manager](https://img.shields.io/badge/package%20manager-uv-purple.svg)
 ![Status](https://img.shields.io/badge/status-In%20Development-yellow.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-A Python-based hydraulic engineering analysis platform for modeling and evaluating pressurized pipe systems, force mains, lift stations, and pumping infrastructure.
+**Hydraulic Analysis Suite (HAS)** is an open-source Python engineering project focused on the analysis of pressurized piping systems, wastewater force mains, and lift stations.
 
-The project began as a learning exercise focused on friction loss calculations and is evolving into a broader engineering toolkit that combines hydraulic analysis, software development, and infrastructure engineering concepts.
+HAS is being developed to connect fundamental hydraulic principles with practical engineering workflows. Rather than assembling isolated equations, the project aims to model how pipes, fittings, pumps, wet wells, and system operating conditions interact in a wastewater pumping system.
 
-The long-term goal is to create a modular suite of reusable tools capable of supporting common water and wastewater engineering workflows, including pipe hydraulics, total dynamic head calculations, pump system analysis, wet well sizing, force main evaluation, and lift station design studies.
+The project also serves as a structured opportunity to deepen technical understanding of force main and lift station design while applying sound Python software engineering practices.
 
-This project serves two primary purposes:
+> **Development status:** HAS is under active development. The capabilities described in the roadmap are development goals, not a claim that the software is complete, verified, or suitable for production design.
 
-* Strengthen understanding of hydraulic engineering and pump station design.
-* Develop professional software engineering skills through the implementation of real-world engineering workflows.
+## Project Objectives
 
----
+HAS has three complementary objectives:
 
-## Project Goals
+1. **Engineering knowledge:** Strengthen understanding of pipe hydraulics, pump selection, system curves, wet well behavior, and wastewater lift station operation.
+2. **Engineering analysis:** Develop transparent, reproducible computational tools that support the evaluation of hydraulic design alternatives and operating conditions.
+3. **Software engineering:** Build a maintainable, tested Python package with reusable models, independent calculation functions, documented assumptions, and traceable verification.
 
-This project is being developed incrementally to:
+The guiding principle is to **build useful engineering workflows rather than a collection of disconnected calculations**.
 
-* Strengthen understanding of water and wastewater hydraulic systems.
-* Reinforce Python software engineering practices.
-* Model real-world hydraulic infrastructure using object-oriented design.
-* Build reusable engineering analysis tools.
-* Explore computational approaches to pump system design and evaluation.
-* Create a foundation for future infrastructure analytics applications.
-* Develop a portfolio-quality engineering software project.
+## Version 1 Development Strategy
 
----
+Version 1 is divided into two independently defined milestones. Detailed scope, task status, and acceptance criteria are maintained in the development roadmap and MVP checklist, rather than duplicated here.
 
-## Design Philosophy
+### MVP 1A: Hydraulic Foundation
 
-The Hydraulic Analysis Suite is organized around engineering components rather than individual equations.
+Establish the verified hydraulic calculation foundation needed to evaluate pressurized pipe and force main systems.
 
-Examples include:
+Planned scope includes pipe and fitting properties, Hazen-Williams and Darcy-Weisbach friction loss, minor losses, total dynamic head, multi-segment force main calculations, and system head curves.
 
-* Pipe
-* Pump
-* Force Main
-* Wet Well
-* Fittings
+**Target outcome:** A usable, independently verified force main hydraulic analysis workflow that does not depend on pump modeling.
 
-Engineering calculations are implemented as independent computational modules that operate on these system components.
+### MVP 1B: Lift Station Analysis
 
-This approach allows the project to grow from simple friction loss calculations into more advanced hydraulic analyses while maintaining a clean and scalable software architecture.
+Extend the hydraulic foundation to evaluate the interaction between pumps, force mains, wet wells, and operating conditions.
 
-The intent is to model infrastructure systems, not simply perform isolated calculations.
+Planned scope includes manufacturer pump curves, pump-system operating points, parallel pump operation, efficiency and power analysis, wet well storage and cycling, selected engineering design checks, and an integrated lift station replacement case study.
 
----
+**Target outcome:** A reproducible lift station hydraulic analysis workflow with documented assumptions, limitations, and verification results.
 
-## Current Features
+More advanced capabilities may be considered after the Version 1 engineering foundation has been established and validated.
 
-### Version 1 - Core Pipe Hydraulics
+## Documentation and Project Navigation
 
-* Hazen-Williams headloss calculations
-* Velocity calculations
-* Headloss per 1,000 feet reporting
-* Command-line interface
+The `docs/` directory is the authoritative source for detailed project information. Begin with the documents relevant to the question you are trying to answer:
 
----
+| Topic | Where to look |
+|---|---|
+| Project purpose, scope, and design decisions | Project overview and design documentation in `docs/` |
+| Current package and directory structure | [`docs/01_architecture/00_project_structure.md`](docs/01_architecture/00_project_structure.md) |
+| Version 1 phases, objectives, and deliverables | Version 1 development roadmap in `docs/` |
+| Implementation tasks and MVP 1A/1B release gates | MVP development checklist in `docs/` |
+| Hydraulic principles, assumptions, and technical references | Engineering documentation in `docs/` |
+| Calculation accuracy and independent comparisons | Verification and validation documentation in `docs/` |
 
-## Planned Roadmap
+The roadmap defines **what and why**; the MVP checklist tracks **what remains to be completed**; the architecture documentation describes **how the code is organized**. These documents are maintained separately so the README can remain useful as the implementation evolves.
 
-### Version 2 - Material Libraries & Validation
+## Engineering Approach
 
-* Pipe material library
-* Automatic Hazen-Williams C-factor selection
-* Input validation
-* Engineering validation checks
+HAS is developed around the following principles:
 
-### Version 3 - Total Dynamic Head Analysis
-
-* Static head calculations
-* Minor loss calculations
-* Total Dynamic Head (TDH) calculations
-
-### Version 4 - Force Main & Lift Station Analysis
-
-* Force main hydraulic analysis
-* Valve and fitting loss estimation
-* Lift station hydraulic calculations
-* Expanded wastewater design workflows
-
-### Version 5 - Pump System Analysis
-
-* Pump curve integration
-* System curve generation
-* Operating point determination
-* CSV-based pump data import
-
-### Version 6 - Hydraulic System Modeling
-
-* Multi-segment pipelines
-* Parallel force mains
-* Advanced hydraulic workflows
-* Infrastructure system modeling
-
-### Future Enhancements
-
-* Wet well storage calculations
-* Pump cycling analysis
-* Generator sizing
-* Report generation
-* Streamlit interface
-* Scenario analysis
-* Infrastructure planning modules
-* Asset management integrations
-
----
-
-## Engineering Topics Covered
-
-* Hazen-Williams Equation
-* Darcy-Weisbach Equation
-* Manning Equation
-* Velocity Calculations
-* Friction Headloss
-* Minor Losses
-* Total Dynamic Head (TDH)
-* Pump Curves
-* System Curves
-* Force Main Design
-* Lift Station Hydraulics
-* Wet Well Analysis
-* Pump System Evaluation
-
----
-
-## Documentation
-
-Project documentation is organized within the `docs/` directory.
-
-Key project documentation includes:
-
-* Project Overview
-* Architecture and Design Decisions
-* Development Strategy
-* Engineering Notes
-* Reference Material
-* Future Roadmap
-
-For the current project structure, see:
-
-```text
-docs/01_structure/00_project_structure.md
-```
-
----
+- **Engineering first:** Models and workflows should reflect the underlying physical system and its boundary conditions.
+- **Explicit assumptions:** Input units, equations, source data, applicability, and limitations must be documented.
+- **Separation of concerns:** Engineering models, numerical calculations, analysis workflows, and presentation should remain logically distinct.
+- **Traceability:** Material properties, fitting coefficients, pump data, and other engineering inputs should identify their sources where applicable.
+- **Verification before reliance:** Calculations should be checked against independent hand calculations, published examples, and appropriate reference tools.
+- **Incremental delivery:** Each development milestone should provide a useful and testable engineering capability.
 
 ## Installation
 
-### Clone Repository
+HAS uses **Python 3.12** and [uv](https://docs.astral.sh/uv/) for environment and dependency management.
+
+Clone the repository and enter the project directory:
 
 ```bash
 git clone <repository-url>
 cd hydraulic-analysis-suite
 ```
 
-### Create Virtual Environment
-
-```bash
-uv venv
-```
-
-### Activate Environment
-
-Linux / macOS:
-
-```bash
-source .venv/bin/activate
-```
-
-Windows:
-
-```powershell
-.venv\Scripts\activate
-```
-
-### Install Dependencies
+Install the project dependencies into a managed virtual environment:
 
 ```bash
 uv sync
 ```
 
----
-
-## Running the Application
+Run the test suite, when tests are available:
 
 ```bash
-python main.py
+uv run pytest
 ```
 
----
+For development tooling, consult `pyproject.toml` for the configured dependency groups and commands. The application entry point and supported user workflows are documented as they become available and verified.
 
-## Development
+## Verification and Intended Use
 
-Install development dependencies:
+Hydraulic calculations are not treated as black boxes. Verification activities are intended to include:
 
-```bash
-uv sync --extra dev
-```
+- Independent hand calculations and dimensional checks.
+- Published engineering examples and recognized technical references.
+- Comparison with established hydraulic modeling tools where suitable.
+- Manufacturer performance data for pump-related analyses.
+- Automated unit, integration, and regression tests.
+- Recorded inputs, assumptions, expected results, discrepancies, and acceptance criteria.
 
-Run tests:
+**HAS is an engineering learning and decision-support project, not a substitute for professional engineering judgment or project-specific design review.** Its outputs must be independently evaluated before use in design, procurement, permitting, construction, or operational decisions. Applicability of local regulations, owner criteria, and relevant professional standards must be established for each project.
 
-```bash
-pytest
-```
+## Engineering References
 
-Run formatting:
+References guiding the project may include:
 
-```bash
-ruff format .
-```
+- *Pumping Station Design*, Third Edition.
+- Hydraulic Institute standards and technical publications.
+- Relevant AWWA manuals and publications.
+- Wastewater engineering manuals and utility design criteria.
+- Manufacturer pump performance curves and technical literature.
+- Applicable state and local regulatory requirements.
 
-Run linting:
-
-```bash
-ruff check .
-```
-
----
-
-## Verification Philosophy
-
-Engineering calculations should never be treated as a black box.
-
-All calculations implemented in this project should be verified against:
-
-* Published engineering references
-* Hand calculations
-* Spreadsheet calculations
-* Manufacturer data where applicable
-* Independent engineering checks when possible
-
-The software is intended as an educational and engineering support tool and should not replace professional engineering judgment.
-
-Users are responsible for verifying all calculations prior to design, construction, procurement, permitting, or operational decision-making.
-
----
-
-## References
-
-Primary references include:
-
-* Pumping Station Design, Third Edition
-* Hydraulic Institute Standards
-* AWWA Publications
-* Ten States Standards
-* Utility Design Manuals and Technical Specifications
-* Manufacturer Pump Curves and Technical Literature
-
----
+Specific equations, coefficients, design criteria, and worked examples should cite the applicable source in the engineering documentation rather than relying on this overview.
 
 ## License
 
-MIT License
-
----
+MIT License. See the repository license file for terms.
 
 ## Author
 
-Brice Nelson
+**Brice Nelson, P.E., MBA**  
+Civil Engineer | Infrastructure Analytics | Python Development
 
-**Civil Engineer | Infrastructure Analytics | Python Developer**
-
-Focused on the intersection of infrastructure engineering, hydraulic systems, data analytics, and software development.
-
-Areas of interest include:
-
-* Water and wastewater infrastructure
-* Lift station and force main design
-* Hydraulic modeling
-* Infrastructure analytics
-* Applied machine learning
-* Engineering software development
+Focused on the intersection of municipal infrastructure engineering, hydraulic analysis, data analytics, and engineering software development.
