@@ -61,7 +61,7 @@ The Fitting class requires completion before the minor loss calculator can be bu
 - [ ] Update `__str__()` to return a concise single-line description
 - [ ] Update `__repr__()` to return a developer-readable representation
 
-### 1.2 Fitting Model Tests (`tests/models/test_fitting.py`)
+### 1.2 Fitting Model Tests (`../../../tests/models/test_fitting.py`)
 
 - [ ] Test valid fitting creation with all required attributes
 - [ ] Test `_validate_fitting_name()` raises error for unrecognized fitting name
@@ -265,7 +265,7 @@ Calculators combine models and equations into engineering tools. They should not
   - Print TDH breakdown with labeled components and total
 - [ ] All output must include units with each value
 
-### 4.3 Main Entry Point (`main.py`)
+### 4.3 Main Entry Point (`../../../main.py`)
 
 - [ ] Import CLI input and display functions
 - [ ] Import Friction Loss Calculator
@@ -306,7 +306,7 @@ Fittings: 2 × 90° Standard Radius Bend, 1 × Gate Valve (Fully Open)
 
 ### 5.2 Package and Installation
 
-- [ ] Confirm `pyproject.toml` entry point is correctly configured for CLI execution
+- [ ] Confirm `../../../pyproject.toml` entry point is correctly configured for CLI execution
 - [ ] Confirm application runs with `python main.py` or `has-cli` command
 - [ ] Confirm all modules are importable from `hydraulic_analysis_suite` package
 - [ ] Confirm all existing tests pass: `pytest tests/`
@@ -444,7 +444,7 @@ All validation results must be captured and stored for traceability.
 
 ### 7.1 README
 
-- [ ] Update `README.md` to reflect current project state
+- [ ] Update `../../../README.md` to reflect current project state
 - [ ] Add installation instructions
 - [ ] Add usage example with sample inputs and expected outputs
 - [ ] List all currently supported pipe materials
