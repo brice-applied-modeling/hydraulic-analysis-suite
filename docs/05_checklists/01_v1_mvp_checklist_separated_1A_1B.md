@@ -56,13 +56,13 @@
 
 ### Engineering Knowledge
 - [x] Establish intended use, limitations, fluid properties, and steady-state assumptions.
-- [ ] Define force-main boundary conditions: suction/wet-well level, discharge HGL, pressure conditions, and elevation datum.
+- [x] Define force-main boundary conditions: suction/wet-well level, discharge HGL, pressure conditions, and elevation datum.
 - [ ] Define units (gpm, inches, feet, fps, psi, hp) and conversions; avoid mixing inside calculations.
 - [ ] Identify owner criteria, Florida requirements, manufacturer information, and engineering references relevant to the case study.
 - [ ] Define independent verification methods, tolerances, and when an external model/specialist review is needed.
 
 ### Software Implementation
-- [ ] Create `docs/engineering/design_basis.md`.
+- [x] Create `docs/engineering/design_basis.md`.
 - [ ] Create `docs/verification/verification_plan.md` and a case-result template.
 - [ ] Audit `data/constants.py` for units, gravity, viscosity, and traceable sources.
 - [ ] Audit `data/pipe_materials.py`, `fitting_coefficients.py`, and `fittings_data.py` for applicability and provenance.
