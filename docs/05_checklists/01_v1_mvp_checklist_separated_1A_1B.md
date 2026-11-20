@@ -55,7 +55,7 @@
 ## Phase 0 —Engineering design basis and verification framework
 
 ### Engineering Knowledge
-- [ ] Establish intended use, limitations, fluid properties, and steady-state assumptions.
+- [x] Establish intended use, limitations, fluid properties, and steady-state assumptions.
 - [ ] Define force-main boundary conditions: suction/wet-well level, discharge HGL, pressure conditions, and elevation datum.
 - [ ] Define units (gpm, inches, feet, fps, psi, hp) and conversions; avoid mixing inside calculations.
 - [ ] Identify owner criteria, Florida requirements, manufacturer information, and engineering references relevant to the case study.
@@ -73,6 +73,12 @@
 - [ ] Design basis reviewed and version-controlled.
 - [ ] At least one independent benchmark defined before implementing the corresponding equation.
 - [ ] Input assumptions and limitations are visible in outputs or supporting documentation.
+- [ ] The engineering design basis is documented and committed. 
+- [ ] The numerical conventions and output schema are defined. 
+- [ ] Existing engineering reference data have been audited, with findings documented. 
+- [ ] At least one independent benchmark has been established with expected numerical results and tolerances. 
+- [ ] The verification plan and reusable case template are complete. 
+- [ ] The fictional LS-001 scenario has documented assumptions and boundaries.
 
 ---
 
