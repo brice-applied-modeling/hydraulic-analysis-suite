@@ -174,7 +174,8 @@ hydraulic_analysis_suite/
 │   │   ├── 04_pump_selection.md           # Curves, BEP, operating regions, and NPSH
 │   │   ├── 05_wet_well_design.md          # Storage, cycling, and controls
 │   │   ├── 06_operating_scenarios.md      # Low/high head and pump combinations
-│   │   └── 07_transient_screening.md      # Surge concerns and study triggers
+│   │   ├── 07_transient_screening.md      # Surge concerns and study triggers
+│   │   └── 08_design_checks.md            # Design checks for velocity, NPSH, pump operation, and surge screening
 │   ├── 03_models/                         # Model attributes, behavior, and constraints
 │   │   ├── pipe.md
 │   │   ├── fitting.md

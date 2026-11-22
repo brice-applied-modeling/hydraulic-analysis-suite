@@ -61,14 +61,14 @@
 - [x] Identify owner criteria, Florida requirements, manufacturer information, and engineering references relevant to the case study.
 - [x] Define independent verification methods, and tolerances.
 - [x] Define pump selection process, including BEP, operating region, and NPSH requirements.
-- [ ] Define wet well sizing, cycling, and control assumptions.
-- [ ] Define design checks for velocity, NPSH, pump operation, and surge screening.
-- [ ] Define operating scenarios for low/high head, pump combinations, and off-design conditions.
-- [ ] Define surge/transient screening criteria and study triggers.
+- [x] Define wet well sizing, cycling, and control assumptions.
+- [x] Define design checks for velocity, NPSH, pump operation, and surge screening.
+- [x] Define operating scenarios for low/high head, pump combinations, and off-design conditions.
+- [x] Define surge/transient screening criteria and study triggers.
 
 ### Software Implementation
-- [x] Create `docs/engineering/design_basis.md`.
-- [ ] Create `docs/verification/verification_plan.md` and a case-result template.
+- [x] Create `docs/engineering/01_design_basis.md`.
+- [x] Create `docs/engineering/09_verification_plan.md` and a case-result template.
 - [ ] Audit `data/constants.py` for units, gravity, viscosity, and traceable sources.
 - [ ] Audit `data/pipe_materials.py`, `fitting_coefficients.py`, and `fittings_data.py` for applicability and provenance.
 - [ ] Decide numerical output schema, error handling, and internal unit conventions.
