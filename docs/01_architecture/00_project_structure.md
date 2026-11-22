@@ -206,7 +206,14 @@ hydraulic_analysis_suite/
 │   │   ├── 01_hand_calculations.md        # Independently derived numerical examples
 │   │   ├── 02_reference_comparisons.md    # Published-reference comparisons
 │   │   └── 03_industry_tool_comparison.md # Equivalent-model comparison records
-│   └── references.bib                     # Traceable engineering bibliography
+│   ├── 09_references/                     # Independent engineering verification records
+│   │   └── references.bib                 # Traceable engineering bibliography
+│   ├── 10_audits/                         # Independent engineering verification records
+│   │   └── 20261122_src_data_audit.md     # Audit of source data for units, gravity, viscosity, and traceable sources 
+│   ├── 99_archive/                        # Archived or deprecated content
+│   │   └── README.md 
+│   └── 100_lessons_learned/               # Independent engineering verification records
+│       └── 00_pipe_class_design_vs_oop_fund       
 │
 └── .github/
     └── workflows/
