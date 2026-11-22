@@ -69,10 +69,10 @@
 ### Software Implementation
 - [x] Create `docs/engineering/01_design_basis.md`.
 - [x] Create `docs/engineering/09_verification_plan.md` and a case-result template.
-- [ ] Audit `data/constants.py` for units, gravity, viscosity, and traceable sources.
-- [ ] Audit `data/pipe_materials.py`, `fitting_coefficients.py`, and `fittings_data.py` for applicability and provenance.
-- [ ] Decide numerical output schema, error handling, and internal unit conventions.
-- [ ] Define LS-001 illustrative scenario and separate it from any real project information.
+- [ ] Audit `src/data/constants.py` for units, gravity, viscosity, and traceable sources.
+- [ ] Audit `src/data/pipe_materials.py`, `src/data/fitting_coefficients.py`, and `src/data/fittings_data.py` for applicability and provenance.
+- [x] Decide numerical output schema, error handling, and internal unit conventions.
+- [x] Define LS-001 illustrative scenario and separate it from any real project information.
 
 ### Acceptance / evidence
 - [ ] Design basis reviewed and version-controlled.
