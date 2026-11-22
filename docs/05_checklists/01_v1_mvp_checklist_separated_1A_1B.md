@@ -57,9 +57,14 @@
 ### Engineering Knowledge
 - [x] Establish intended use, limitations, fluid properties, and steady-state assumptions.
 - [x] Define force-main boundary conditions: suction/wet-well level, discharge HGL, pressure conditions, and elevation datum.
-- [ ] Define units (gpm, inches, feet, fps, psi, hp) and conversions; avoid mixing inside calculations.
-- [ ] Identify owner criteria, Florida requirements, manufacturer information, and engineering references relevant to the case study.
-- [ ] Define independent verification methods, tolerances, and when an external model/specialist review is needed.
+- [x] Define units (gpm, inches, feet, fps, psi, hp) and conversions; avoid mixing inside calculations.
+- [x] Identify owner criteria, Florida requirements, manufacturer information, and engineering references relevant to the case study.
+- [x] Define independent verification methods, and tolerances.
+- [x] Define pump selection process, including BEP, operating region, and NPSH requirements.
+- [ ] Define wet well sizing, cycling, and control assumptions.
+- [ ] Define design checks for velocity, NPSH, pump operation, and surge screening.
+- [ ] Define operating scenarios for low/high head, pump combinations, and off-design conditions.
+- [ ] Define surge/transient screening criteria and study triggers.
 
 ### Software Implementation
 - [x] Create `docs/engineering/design_basis.md`.

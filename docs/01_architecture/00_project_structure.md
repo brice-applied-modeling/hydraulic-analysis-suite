@@ -169,10 +169,12 @@ hydraulic_analysis_suite/
 │   ├── 02_engineering/                    # Engineering methods and design criteria
 │   │   ├── 00_design_basis.md             # Conventions, assumptions, and units
 │   │   ├── 01_force_main_hydraulics.md    # Pipe, boundary, and HGL/EGL methods
-│   │   ├── 02_pump_selection.md           # Curves, BEP, operating regions, and NPSH
-│   │   ├── 03_wet_well_design.md          # Storage, cycling, and controls
-│   │   ├── 04_operating_scenarios.md      # Low/high head and pump combinations
-│   │   └── 05_transient_screening.md      # Surge concerns and study triggers
+│   │   ├── 02_units.md                    # Units and conversions
+│   │   ├── 03_criteria_and_requirements.md  # Criteria and requirements
+│   │   ├── 04_pump_selection.md           # Curves, BEP, operating regions, and NPSH
+│   │   ├── 05_wet_well_design.md          # Storage, cycling, and controls
+│   │   ├── 06_operating_scenarios.md      # Low/high head and pump combinations
+│   │   └── 07_transient_screening.md      # Surge concerns and study triggers
 │   ├── 03_models/                         # Model attributes, behavior, and constraints
 │   │   ├── pipe.md
 │   │   ├── fitting.md
