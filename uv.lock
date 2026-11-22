@@ -550,27 +550,29 @@ dependencies = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
-    { name = "spyder-kernels" },
 ]
 
 [package.dev-dependencies]
 dev = [
     { name = "pytest" },
+    { name = "spyder-kernels" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "ipykernel", specifier = ">=7.2.0" },
+    { name = "ipykernel", specifier = ">=6.29.3,<7" },
     { name = "ipython", specifier = ">=9.14.1" },
     { name = "jupyterlab", specifier = ">=4.5.8" },
     { name = "matplotlib", specifier = ">=3.10.9" },
     { name = "numpy", specifier = ">=2.4.6" },
     { name = "pandas", specifier = ">=3.0.3" },
-    { name = "spyder-kernels", specifier = ">=2.2.0" },
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=9.1.0" }]
+dev = [
+    { name = "pytest", specifier = ">=9.1.0" },
+    { name = "spyder-kernels", specifier = ">=3.1.0,<3.2.0" },
+]
 
 [[package]]
 name = "idna"
@@ -592,7 +594,7 @@ wheels = [
 
 [[package]]
 name = "ipykernel"
-version = "7.2.0"
+version = "6.31.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appnope", marker = "sys_platform == 'darwin'" },
@@ -609,9 +611,9 @@ dependencies = [
     { name = "tornado" },
     { name = "traitlets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ca/8d/b68b728e2d06b9e0051019640a40a9eb7a88fcd82c2e1b5ce70bef5ff044/ipykernel-7.2.0.tar.gz", hash = "sha256:18ed160b6dee2cbb16e5f3575858bc19d8f1fe6046a9a680c708494ce31d909e", size = 176046, upload-time = "2026-02-06T16:43:27.403Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/1d/d5ba6edbfe6fae4c3105bca3a9c889563cc752c7f2de45e333164c7f4846/ipykernel-6.31.0.tar.gz", hash = "sha256:2372ce8bc1ff4f34e58cafed3a0feb2194b91fc7cad0fc72e79e47b45ee9e8f6", size = 167493, upload-time = "2025-10-20T11:42:39.948Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/82/b9/e73d5d9f405cba7706c539aa8b311b49d4c2f3d698d9c12f815231169c71/ipykernel-7.2.0-py3-none-any.whl", hash = "sha256:3bbd4420d2b3cc105cbdf3756bfc04500b1e52f090a90716851f3916c62e1661", size = 118788, upload-time = "2026-02-06T16:43:25.149Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/d8/502954a4ec0efcf264f99b65b41c3c54e65a647d9f0d6f62cd02227d242c/ipykernel-6.31.0-py3-none-any.whl", hash = "sha256:abe5386f6ced727a70e0eb0cf1da801fa7c5fa6ff82147747d5a0406cd8c94af", size = 117003, upload-time = "2025-10-20T11:42:37.502Z" },
 ]
 
 [[package]]
@@ -1594,6 +1596,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pyxdg"
+version = "0.28"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz", hash = "sha256:3267bb3074e934df202af2ee0868575484108581e6f3cb006af1da35395e88b4", size = 77776, upload-time = "2022-06-05T11:35:01Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e5/8d/cf41b66a8110670e3ad03dab9b759704eeed07fa96e90fdc0357b2ba70e2/pyxdg-0.28-py2.py3-none-any.whl", hash = "sha256:bdaf595999a0178ecea4052b7f4195569c1ff4d344567bccdc12dfdf02d545ab", size = 49520, upload-time = "2022-06-05T11:34:58.832Z" },
+]
+
+[[package]]
 name = "pyyaml"
 version = "6.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1892,19 +1903,22 @@ wheels = [
 
 [[package]]
 name = "spyder-kernels"
-version = "2.2.0"
+version = "3.1.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cloudpickle" },
     { name = "ipykernel" },
     { name = "ipython" },
     { name = "jupyter-client" },
+    { name = "packaging" },
+    { name = "pyxdg", marker = "sys_platform == 'linux'" },
     { name = "pyzmq" },
+    { name = "traitlets" },
     { name = "wurlitzer", marker = "sys_platform != 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/93/34/43ce42578526ce78acbf2e8194a8b6024a1179e3c2c546d945003ba9a46c/spyder-kernels-2.2.0.tar.gz", hash = "sha256:6b19ea224f183dbff8ff0031bee35ae6b5b3a6eef4aa84cfab04e3bc3e304b91", size = 67587, upload-time = "2021-11-22T23:21:22.386Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c3/04/b5bf73122fea4963706961d0eeae28e84f96efe1bf0fae2d81e9a2707591/spyder_kernels-3.1.7.tar.gz", hash = "sha256:828ed7857163c59f36f2b30e2cf564e36c1e1094d4aca5de8fe05894f9f9b9ab", size = 86576, upload-time = "2026-11-02T17:02:34.343Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6b/47/184169f8fcb71237b64015cb80c1ac0e47609bc581471c28f8e531e03d93/spyder_kernels-2.2.0-py2.py3-none-any.whl", hash = "sha256:d15d014e4ad012d53fa9c4bc89de81a7df2c49097f396c4ad55b5577ea82f6f0", size = 69777, upload-time = "2021-11-22T23:21:20.905Z" },
+    { url = "https://files.pythonhosted.org/packages/11/d1/5e9716690d9bba5f4a4f2474c05cddb5cba313e3f38fa7e52d850d4d4cb6/spyder_kernels-3.1.7-py3-none-any.whl", hash = "sha256:1b09fe65066a4efbafb4a6b89808d86558b05e82464c69d7b94a76dc0dddbc68", size = 84399, upload-time = "2026-11-02T17:02:32.781Z" },
 ]
 
 [[package]]
